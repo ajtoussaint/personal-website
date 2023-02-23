@@ -5,6 +5,7 @@ body {
   margin: 0;
 }
 body a {
+  color: black;
   text-decoration: underline;
 }
 body a:hover {
@@ -75,8 +76,16 @@ body a:hover {
   border-bottom: 0.1em black solid;
 }
 #navigate .navSec a {
+  text-decoration: none;
   padding: 0.1em 0.5em 0.1em 0.5em;
+  margin: 0.25em 0;
   width: fit-content;
+}
+#navigate .navSec a:hover {
+  text-decoration: underline;
+}
+#navigate .navSec b {
+  padding: 0.1em 0.5em 0.1em 0em;
 }
 
 #main {

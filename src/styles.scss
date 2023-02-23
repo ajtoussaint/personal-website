@@ -11,6 +11,7 @@ body{
     color:$off_white;
     font-family: monospace;
     a{
+        color:black;
         text-decoration: underline;
         &:hover{
             color:gold;
@@ -80,8 +81,16 @@ body{
             border-bottom: $nav_border;
         }
         a{
+            text-decoration: none;
             padding:0.1em 0.5em 0.1em 0.5em;
+            margin: 0.25em 0;
             width: fit-content;
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        b{
+            padding:0.1em 0.5em 0.1em 0em;
         }
         background-color: $mid_teal;
     }
