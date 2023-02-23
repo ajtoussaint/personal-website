@@ -1,10 +1,18 @@
 import './App.css';
+import { Routes, Route, Link, Outlet, redirect} from "react-router-dom";
 
 function App() {
   return (
     <div id="appWrapper">
       <div id="banner">
-        banner
+        <div id='bannerMain'>
+          <h1>Andrew Toussaint</h1>
+        </div>
+        <div id='bannerLinks'>
+          <a>nav1</a>
+          <a>nav2</a>
+          <a>nav3</a>
+        </div>
       </div>
       <div id="navigate">
         <div className='navSec'>

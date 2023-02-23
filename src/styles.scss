@@ -3,6 +3,8 @@ $off_white:rgb(235,235,235);
 $mid_teal: rgb(80,124,124);
 $shadow_teal: rgb(30,45,45);
 $dark_teal:rgb(55,85,85);
+$gradient_mid_dark:linear-gradient(to bottom, $dark_teal, $mid_teal);
+$nav_border: 0.1em black solid;
 
 body{
     background-color: $back_gray;
@@ -37,14 +39,28 @@ body{
     width: 100%;
     height: 100%;
     background-color: $mid_teal;
+    display: flex;
+    flex-direction: column;
+    #bannerMain{
+        background-image: linear-gradient(to bottom, $dark_teal, $mid_teal, $mid_teal, $mid_teal, $dark_teal);;
+        height: calc(100% - 1em);
+        text-align: center;
+    }
+    #bannerLinks{
+        border-bottom: $nav_border;
+        height: 1.5em;
+        display: flex;
+        color:black;
+        a{
+            padding:0 0.5em; 
+        }
+    }
 }
 
 #navigate{
-    $nav_border: 0.1em black solid;
     grid-area: navigate;
     width: 100%;
     height: 100%;
-    background-color: orange;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -55,12 +71,12 @@ body{
         flex-direction: column;
         color:black;
         border-right: $nav_border;
+        border-top: $nav_border;
         h2{
             color:$off_white;
             margin:0;
             text-align: center;
             background-image: linear-gradient(to bottom, $dark_teal, $mid_teal);
-            border-top: $nav_border;
             border-bottom: $nav_border;
         }
         a{
