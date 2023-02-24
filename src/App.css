@@ -12,6 +12,10 @@ body a:hover {
   color: gold;
   cursor: pointer;
 }
+body img {
+  height: auto;
+  max-width: 90%;
+}
 
 #root {
   width: 100%;
@@ -45,6 +49,8 @@ body a:hover {
   height: 1.5em;
   display: flex;
   color: black;
+  width: 100%;
+  justify-content: space-evenly;
 }
 #banner #bannerLinks a {
   padding: 0 0.5em;

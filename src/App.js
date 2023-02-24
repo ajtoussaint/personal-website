@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
+import OSU from "./components/OSU.component"
 
 function App() {
   return (
@@ -9,13 +10,14 @@ function App() {
           <h1>Andrew Toussaint</h1>
         </div>
         <div id='bannerLinks'>
-          <Link>nav1</Link>
-          <Link>nav2</Link>
-          <Link>nav3</Link>
+          <Link to="/">Home</Link>
+          <a href="mailto: ajtoussaint@gmail.com">ajtoussaint@gmail.com</a>
+          <a href="https://github.com/ajtoussaint">Github</a>
+          <a href="https://www.linkedin.com/in/andrew-toussaint-9a1411183">Linkedin</a>
         </div>
       </div>
       <div id="navigate">
-        <div className='navSec'>
+        <div id="navQualifications"className='navSec'>
           <h2>Qualifications</h2>
           <b>Education</b>
           <Link to="/qualifications/OSU">B.S. Environmental Engineering from The Ohio State University</Link>
@@ -29,75 +31,75 @@ function App() {
           <b>Certifications</b>
           <Link to="/qualifications/EIT">Engineer in Training Certification</Link>
         </div>
+        <div id="navSkills" className='navSec'>
+          <h2>Skills</h2>
+          <b>Languages</b>
+          <Link to="/skills/HTML">HTML / CSS</Link>
+          <Link to="/skills/JS">JavaScript</Link>
+          <Link to="/skills/SQL">SQL</Link>
+          <Link to="/skills/C">C# / C++</Link>
+          <b>Technologies</b>
+          <Link to="/skills/Git">Git / Github</Link>
+          <Link to="/skills/React">React</Link>
+          <Link to="/skills/Node">Node.js / Express</Link>
+          <Link to="/skills/PostgreSQL">PostgreSQL</Link>
+          <Link to="/skills/Mongo">MongoDB/Atlas/Mongoose</Link>
+          <Link to="/skills/Pug">Pug</Link>
+          <Link to="/skills/Chai">Chai</Link>
+        </div>
+        <div id="navWorkExperience" className='navSec'>
+          <h2>Work Experience</h2>
+          <Link to="/workExperience/DAQ">Kentucky Division for Air Quality</Link>
+          <Link to="/workExperience/NEAS">National Engineer and Architectual Services</Link>
+          <Link to="/workExperience/CHP">Carillon Historical Park</Link>
+        </div>
         <div id='navProjects' className='navSec'>
           <h2>Projects</h2>
           <b>Personal Projects</b>
-          <Link>Together Cars</Link>
-          <Link>Bekenstein Limit</Link>
-          <Link>Arithmagic</Link>
-          <Link>Debt Calculator</Link>
+          <Link to="/projects/TogetherCars">Together Cars</Link>
+          <Link to="/projects/Bekenstein">Bekenstein Limit</Link>
+          <Link to="/projects/Arithmagic">Arithmagic</Link>
+          <Link to="/projects/Debt">Debt Calculator</Link>
           <b>Back End Development and APIs</b>
-          <Link>Timestamp Microservice</Link>
-          <Link>Request Header Parser Microservice</Link>
-          <Link>URL Shortener Microservice</Link>
-          <Link>Exercise Tracker</Link>
-          <Link>File Metadata Microservice</Link>
+          <Link to="/projects/Timestamp">Timestamp Microservice</Link>
+          <Link to="/projects/Header">Request Header Parser Microservice</Link>
+          <Link to="/projects/URL">URL Shortener Microservice</Link>
+          <Link to="/projects/Exercise">Exercise Tracker</Link>
+          <Link to="/projects/Metadata">File Metadata Microservice</Link>
           <b>Front End Development Libraries</b>
-          <Link>Random Quote Machine</Link>
-          <Link>Markdown Previewer</Link>
-          <Link>Drum Machine</Link>
-          <Link>JavaScript Calculator</Link>
-          <Link>25 + 5 Clock</Link>
+          <Link to="/projects/Quote">Random Quote Machine</Link>
+          <Link to="/projects/Markdown">Markdown Previewer</Link>
+          <Link to="/projects/Drum">Drum Machine</Link>
+          <Link to="/projects/Calculator">JavaScript Calculator</Link>
+          <Link to="/projects/Clock">25 + 5 Clock</Link>
           <b>Javascript Algorithms and Data Structures</b>
-          <Link>Palindrome Checker</Link>
-          <Link>Roman Numeral Converter</Link>
-          <Link>Caesars Cipher</Link>
-          <Link>Telephone Number Validator</Link>
-          <Link>Cash Register</Link>
+          <Link to="/projects/Palindrome">Palindrome Checker</Link>
+          <Link to="/projects/Roman">Roman Numeral Converter</Link>
+          <Link to="/projects/Casesar">Caesars Cipher</Link>
+          <Link to="/projects/Telephone">Telephone Number Validator</Link>
+          <Link to="/projects/Cash">Cash Register</Link>
           <b>Relational Database</b>
-          <Link>Celestial Bodies Database</Link>
-          <Link>World Cup Database</Link>
-          <Link>Salon Appointment Scheduler</Link>
-          <Link>Periodic Table Database</Link>
-          <Link>Number Guessing Game</Link>
+          <Link to="/projects/Celestial">Celestial Bodies Database</Link>
+          <Link to="/projects/WC">World Cup Database</Link>
+          <Link to="/projects/Salon">Salon Appointment Scheduler</Link>
+          <Link to="/projects/Periodic">Periodic Table Database</Link>
+          <Link to="/projects/Guess">Number Guessing Game</Link>
           <b>Quality Assurance</b>
-          <Link>Metric-Imperial Converter</Link>
-          <Link>Issue Tracker</Link>
-          <Link>Personal Library</Link>
-          <Link>Sudoku Solver</Link>
-          <Link>American British Translator</Link>
+          <Link to="/projects/Convert">Metric-Imperial Converter</Link>
+          <Link to="/projects/Issue">Issue Tracker</Link>
+          <Link to="/projects/Library">Personal Library</Link>
+          <Link to="/projects/Sudoku">Sudoku Solver</Link>
+          <Link to="/projects/Translate">American British Translator</Link>
           <b>Responsive Web Design</b>
-          <Link>Survey Form</Link>
-          <Link>Tribute Page</Link>
-          <Link>Technical Documentation Page</Link>
-          <Link>Build a Product Landing Page</Link>
-          <Link>Build a Personal Portfolio Webpage</Link>
+          <Link to="/projects/Survey">Survey Form</Link>
+          <Link to="/projects/Tribute">Tribute Page</Link>
+          <Link to="/projects/Technical">Technical Documentation Page</Link>
+          <Link to="/projects/Product">Build a Product Landing Page</Link>
+          <Link to="/projects/Portfolio">Build a Personal Portfolio Webpage</Link>
         </div>
-        <div className='navSec'>
-          <h2>Skills</h2>
-          <b>Languages</b>
-          <Link>HTML / CSS</Link>
-          <Link>JavaScript</Link>
-          <Link>SQL</Link>
-          <Link>C# / C++</Link>
-          <b>Technologies</b>
-          <Link>Git / Github</Link>
-          <Link>React</Link>
-          <Link>Node.js / Express</Link>
-          <Link>PostgreSQL</Link>
-          <Link>MongoDB/Atlas/Mongoose</Link>
-          <Link>Pug</Link>
-          <Link>Chai</Link>
-        </div>
-        <div className='navSec'>
-          <h2>Work Experience</h2>
-          <Link>Kentucky Division for Air Quality</Link>
-          <Link>National Engineer and Architectual Services</Link>
-          <Link>Carillon Historical Park</Link>
-        </div>
-        <div className='navSec'>
+        <div id="navOther" className='navSec'>
           <h2>Other</h2>
-          <Link>Eagle Scout</Link>
+          <Link to="/Eagle">Eagle Scout</Link>
         </div>
       </div>
       <div id="main">
@@ -107,8 +109,8 @@ function App() {
           element={<div>home</div>}
           />
           <Route 
-          path="/red" 
-          element={<div>red</div>}
+          path="/qualifications/OSU" 
+          element={<OSU />}
           />
         </Routes>
       </div>
