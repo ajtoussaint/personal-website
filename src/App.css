@@ -100,3 +100,66 @@ body img {
   height: 100%;
   margin: 1em 0 0 1em;
 }
+
+#OSUWrapper {
+  display: flex;
+  flex-direction: column;
+}
+#OSUWrapper img {
+  max-width: 50%;
+  margin-top: 1em;
+}
+#OSUWrapper #OSUimages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#OSUWrapper #transcript-img {
+  max-width: 100%;
+  align-self: center;
+}
+
+.pageWrapper {
+  display: flex;
+  flex-direction: column;
+}
+.pageWrapper img {
+  align-self: center;
+}
+.pageWrapper a {
+  align-self: center;
+  display: flex;
+  justify-content: center;
+}
+.pageWrapper h1 {
+  text-align: center;
+}
+
+.techRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.techRow img {
+  max-width: 30%;
+  margin: 0 1em;
+}
+
+.project {
+  background-color: rgb(80, 124, 124);
+  display: flex;
+  flex-direction: column;
+  padding: 0.5em;
+  max-width: 15em;
+  border: black solid 0.2em;
+  box-shadow: 0.4em 0.4em rgb(30, 45, 45);
+}
+.project h1 {
+  font-size: 1em;
+}
+.project:hover {
+  background-color: rgb(55, 85, 85);
+  color: black;
+}

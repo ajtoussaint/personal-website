@@ -108,3 +108,68 @@ body{
     height: 100%;
     margin: 1em 0 0 1em;
 }
+
+#OSUWrapper{
+    display: flex;
+    flex-direction: column;
+
+    img{
+        max-width: 50%;
+        margin-top: 1em;
+    }
+    #OSUimages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width:100%;
+    }
+    #transcript-img{
+        max-width: 100%;
+        align-self: center;
+    }
+    
+}
+
+.pageWrapper{
+    display: flex;
+    flex-direction: column;
+    img{
+        align-self: center;
+    }
+    a{
+        align-self: center;
+        display: flex;
+        justify-content: center;
+    }
+    h1{
+        text-align: center;
+    }
+}
+
+.techRow{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        max-width: 30%;
+        margin:0 1em;
+    }
+}
+
+.project{
+    background-color: $mid_teal;
+    display: flex;
+    flex-direction: column;
+    padding:0.5em;
+    max-width: 15em;
+    border: black solid 0.2em;
+    box-shadow: 0.4em 0.4em $shadow_teal;
+    h1{
+        font-size: 1em;
+    }
+    &:hover{
+        background-color: $dark_teal;
+        color: black;
+    }
+}

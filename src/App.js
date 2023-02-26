@@ -1,6 +1,7 @@
 import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
 import OSU from "./components/OSU.component"
+import BED from "./components/BED.component"
 
 function App() {
   return (
@@ -111,6 +112,10 @@ function App() {
           <Route 
           path="/qualifications/OSU" 
           element={<OSU />}
+          />
+          <Route 
+          path="/qualifications/BED" 
+          element={<BED />}
           />
         </Routes>
       </div>
