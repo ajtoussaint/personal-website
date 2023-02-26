@@ -29,6 +29,7 @@ body img {
   grid-template-areas: "banner banner" "navigate main";
   width: 100%;
   height: 100%;
+  border-bottom: 0.1em black solid;
 }
 
 #banner {
@@ -64,6 +65,8 @@ body img {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  background-color: rgb(80, 124, 124);
+  border-right: 0.1em black solid;
 }
 #navigate .navSec {
   width: 100%;
