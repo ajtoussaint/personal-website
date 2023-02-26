@@ -56,12 +56,12 @@ function App() {
         </div>
         <div id='navProjects' className='navSec'>
           <h2>Projects</h2>
-          <b>Personal Projects</b>
+          {/*<b>Personal Projects</b>*/}
           <Link to="/projects/TogetherCars">Together Cars</Link>
           <Link to="/projects/Bekenstein">Bekenstein Limit</Link>
           <Link to="/projects/Arithmagic">Arithmagic</Link>
           <Link to="/projects/Debt">Debt Calculator</Link>
-          <b>Back End Development and APIs</b>
+          {/*<b>Back End Development and APIs</b>
           <Link to="/projects/Timestamp">Timestamp Microservice</Link>
           <Link to="/projects/Header">Request Header Parser Microservice</Link>
           <Link to="/projects/URL">URL Shortener Microservice</Link>
@@ -96,7 +96,7 @@ function App() {
           <Link to="/projects/Tribute">Tribute Page</Link>
           <Link to="/projects/Technical">Technical Documentation Page</Link>
           <Link to="/projects/Product">Build a Product Landing Page</Link>
-          <Link to="/projects/Portfolio">Build a Personal Portfolio Webpage</Link>
+  <Link to="/projects/Portfolio">Build a Personal Portfolio Webpage</Link>*/}
         </div>
         <div id="navOther" className='navSec'>
           <h2>Other</h2>

@@ -5,6 +5,10 @@ import js from '../images/Javascript.png'
 import mdb from '../images/MongoDB.png'
 
 import Timestamp from "./projects/Timestamp.component"
+import Header from "./projects/Header.component"
+import URL from "./projects/URL.component"
+import Exercise from './projects/Exercise.component'
+import Metadata from './projects/Metadata.component'
 
 export default function BED(props){
    return(
@@ -22,7 +26,11 @@ export default function BED(props){
         </div>
         <h3>Projects</h3>
         <div id='projectsWrapper'>
+            <Exercise />
             <Timestamp />
+            <Header />
+            <URL />
+            <Metadata />
         </div>
         
     </div>
