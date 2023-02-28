@@ -3,6 +3,8 @@ import { Routes, Route, Link} from "react-router-dom";
 import OSU from "./components/OSU.component"
 import BED from "./components/BED.component"
 import DAQ from "./components/DAQ.component"
+import NEAS from "./components/NEAS.component"
+import CHP from "./components/CHP.component"
 
 function App() {
   return (
@@ -123,7 +125,17 @@ function App() {
           path="/workExperience/DAQ"
           element={<DAQ />}
           />
-          
+
+          <Route
+          path="/workExperience/NEAS"
+          element={<NEAS />}
+          />
+
+          <Route
+          path="/workExperience/CHP"
+          element={<CHP />}
+          />
+
         </Routes>
       </div>
 
