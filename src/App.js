@@ -2,6 +2,7 @@ import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
 import OSU from "./components/OSU.component"
 import BED from "./components/BED.component"
+import DAQ from "./components/DAQ.component"
 
 function App() {
   return (
@@ -105,18 +106,24 @@ function App() {
       </div>
       <div id="main">
         <Routes>
-          <Route 
-          path="/" 
+          <Route
+          path="/"
           element={<div>home</div>}
           />
-          <Route 
-          path="/qualifications/OSU" 
+          <Route
+          path="/qualifications/OSU"
           element={<OSU />}
           />
-          <Route 
-          path="/qualifications/BED" 
+          <Route
+          path="/qualifications/BED"
           element={<BED />}
           />
+
+          <Route
+          path="/workExperience/DAQ"
+          element={<DAQ />}
+          />
+          
         </Routes>
       </div>
 

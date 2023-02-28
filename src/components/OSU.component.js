@@ -5,7 +5,7 @@ import transcript from '../images/UnofficialTranscript.JPG'
 export default function OSU(props){
 
     return(
-        <div id="OSUWrapper">
+        <div id="OSUWrapper" className="pageWrapper">
             <div id="OSUimages">
                 <img id="OSULogo" src={logo} alt="Go Bucks!"/>
                 <img id="OSUDiploma" src={diploma} alt="diploma"/>
