@@ -1,11 +1,15 @@
 import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
 import OSU from "./components/OSU.component"
+
 import BED from "./components/BED.component"
+import FED from "./components/FED.component"
+import JSA from './components/JSA.component';
+
 import DAQ from "./components/DAQ.component"
 import NEAS from "./components/NEAS.component"
 import CHP from "./components/CHP.component"
-import FED from "./components/FED.component"
+
 
 function App() {
   return (
@@ -125,6 +129,11 @@ function App() {
           <Route
           path="/qualifications/FED"
           element={<FED />}
+          />
+
+          <Route
+          path="/qualifications/JSA"
+          element={<JSA />}
           />
 
           <Route
