@@ -5,6 +5,7 @@ import BED from "./components/BED.component"
 import DAQ from "./components/DAQ.component"
 import NEAS from "./components/NEAS.component"
 import CHP from "./components/CHP.component"
+import FED from "./components/FED.component"
 
 function App() {
   return (
@@ -119,6 +120,11 @@ function App() {
           <Route
           path="/qualifications/BED"
           element={<BED />}
+          />
+
+          <Route
+          path="/qualifications/FED"
+          element={<FED />}
           />
 
           <Route
