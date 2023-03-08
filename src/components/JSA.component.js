@@ -3,6 +3,9 @@ import js from '../images/Javascript.png'
 
 import Palindrome from './projects/Palindrome.component'
 import Roman from './projects/Roman.component'
+import Caesar from './projects/Caesar.component'
+import Telephone from './projects/Telephone.component'
+import Cash from './projects/Cash.component'
 
 export default function JSA(props){
     return(
@@ -19,8 +22,11 @@ export default function JSA(props){
          <div id='projectsWrapper'>
             <Palindrome />
             <Roman />
+            <Caesar />
+            <Telephone />
+            <Cash />
          </div>
-         
+
      </div>
     )
  }
