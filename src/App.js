@@ -4,7 +4,8 @@ import OSU from "./components/OSU.component"
 
 import BED from "./components/BED.component"
 import FED from "./components/FED.component"
-import JSA from './components/JSA.component';
+import JSA from './components/JSA.component'
+import RDB from './components/RDB.component'
 
 import DAQ from "./components/DAQ.component"
 import NEAS from "./components/NEAS.component"
@@ -134,6 +135,11 @@ function App() {
           <Route
           path="/qualifications/JSA"
           element={<JSA />}
+          />
+
+          <Route
+          path="/qualifications/RDB"
+          element={<RDB />}
           />
 
           <Route
