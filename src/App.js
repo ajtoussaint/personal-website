@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
+
 import OSU from "./components/OSU.component"
 
 import BED from "./components/BED.component"
