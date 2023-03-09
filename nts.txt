@@ -1,3 +1,4 @@
+EIT is too big and not centered
 Nav bar gets too long
 CSS logo is bigger than html on RWD page
 projects on cert pages are not centered

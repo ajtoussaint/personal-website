@@ -9,6 +9,7 @@ import JSA from './components/JSA.component'
 import RDB from './components/RDB.component'
 import QA from './components/QA.component'
 import RWD from './components/RWD.component'
+import EIT from './components/EIT.component'
 
 import DAQ from "./components/DAQ.component"
 import NEAS from "./components/NEAS.component"
@@ -153,6 +154,11 @@ function App() {
           <Route
           path="/qualifications/RWD"
           element={<RWD />}
+          />
+
+          <Route
+          path="/qualifications/EIT"
+          element={<EIT />}
           />
 
           <Route
