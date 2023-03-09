@@ -12,7 +12,7 @@ import Metadata from './projects/Metadata.component'
 
 export default function BED(props){
    return(
-    <div id="BEDWapper" className="pageWrapper">
+    <div id="BEDWrapper" className="pageWrapper">
         <h1>free Code Camp Back End Development and APIs Certification</h1>
         <a href="https://freecodecamp.org/certification/ajtoussaint/back-end-development-and-apis">
             <img src={cert} alt="certificate"></img>
@@ -32,7 +32,7 @@ export default function BED(props){
             <URL />
             <Metadata />
         </div>
-        
+
     </div>
    )
 }

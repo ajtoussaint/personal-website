@@ -14,7 +14,7 @@ import Translate from './projects/Translate.component'
 
 export default function QA(props){
     return(
-     <div id="QAWapper" className="pageWrapper">
+     <div id="QAWrapper" className="pageWrapper">
          <h1>free Code Camp Quality Assurance Certification</h1>
          <a href="https://www.freecodecamp.org/certification/ajtoussaint/quality-assurance-v7">
              <img src={cert} alt="certificate"></img>

@@ -9,7 +9,7 @@ import Cash from './projects/Cash.component'
 
 export default function JSA(props){
     return(
-     <div id="JSAWapper" className="pageWrapper">
+     <div id="JSAWrapper" className="pageWrapper">
          <h1>free Code Camp JavaScript Algorithms and Data Structures Certification</h1>
          <a href="https://freecodecamp.org/certification/ajtoussaint/javascript-algorithms-and-data-structures">
              <img src={cert} alt="certificate"></img>

@@ -10,7 +10,7 @@ import Clock from './projects/Clock.component'
 
 export default function FED(props){
     return(
-     <div id="FEDWapper" className="pageWrapper">
+     <div id="FEDWrapper" className="pageWrapper">
          <h1>free Code Camp Front End Development Libraries Certification</h1>
          <a href="https://freecodecamp.org/certification/ajtoussaint/front-end-development-libraries">
              <img src={cert} alt="certificate"></img>
@@ -28,7 +28,7 @@ export default function FED(props){
              <Calculator />
              <Clock />
          </div>
-         
+
      </div>
     )
  }

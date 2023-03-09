@@ -10,7 +10,7 @@ import Guess from './projects/Guess.component'
 
 export default function RDB(props){
     return(
-     <div id="RDBWapper" className="pageWrapper">
+     <div id="RDBWrapper" className="pageWrapper">
          <h1>free Code Camp Relational Database Certification</h1>
          <a href="https://freecodecamp.org/certification/ajtoussaint/relational-database-v8">
              <img src={cert} alt="certificate"></img>

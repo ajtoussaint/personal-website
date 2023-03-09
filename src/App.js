@@ -7,6 +7,7 @@ import FED from "./components/FED.component"
 import JSA from './components/JSA.component'
 import RDB from './components/RDB.component'
 import QA from './components/QA.component'
+import RWD from './components/RWD.component'
 
 import DAQ from "./components/DAQ.component"
 import NEAS from "./components/NEAS.component"
@@ -106,7 +107,7 @@ function App() {
           <Link to="/projects/Tribute">Tribute Page</Link>
           <Link to="/projects/Technical">Technical Documentation Page</Link>
           <Link to="/projects/Product">Build a Product Landing Page</Link>
-  <Link to="/projects/Portfolio">Build a Personal Portfolio Webpage</Link>*/}
+          <Link to="/projects/Portfolio">Build a Personal Portfolio Webpage</Link>*/}
         </div>
         <div id="navOther" className='navSec'>
           <h2>Other</h2>
@@ -146,6 +147,11 @@ function App() {
           <Route
           path="/qualifications/QA"
           element={<QA />}
+          />
+
+          <Route
+          path="/qualifications/RWD"
+          element={<RWD />}
           />
 
           <Route
