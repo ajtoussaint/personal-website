@@ -32,8 +32,8 @@ body{
 
 #appWrapper{
     display: grid;
-    grid-template-rows: 10vh 1fr;
-    grid-template-columns: 20vh 1fr;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-areas: "banner banner" "navigate main";
     width: 100%;
     height: 100%;
@@ -43,7 +43,8 @@ body{
 #banner{
     grid-area: banner;
     width: 100%;
-    height: 100%;
+    height: 10vh;
+    min-height: 11ch;
     background-color: $mid_teal;
     display: flex;
     flex-direction: column;
@@ -67,7 +68,8 @@ body{
 
 #navigate{
     grid-area: navigate;
-    width: 100%;
+    min-width: 25ch;
+    width: 20vw;
     height: 100%;
     display: flex;
     flex-direction: column;
