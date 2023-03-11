@@ -155,7 +155,7 @@ body img {
 #projectsWrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
+  justify-content: center;
   align-self: center;
 }
 
@@ -182,4 +182,12 @@ body img {
 .project:hover {
   background-color: rgb(55, 85, 85);
   color: black;
+}
+
+#EITWrapper img {
+  max-width: 500px;
+}
+
+#RWDWrapper .techRow img {
+  max-height: 200px;
 }

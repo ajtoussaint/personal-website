@@ -2,6 +2,8 @@ import cert from '../images/EIT.png'
 
 export default function EIT(props){
   return(
-    <img src={cert} alt="EIT Certification"></img>
+    <div id='EITWrapper' className='pageWrapper'>
+      <img src={cert} alt="EIT Certification"></img>
+    </div>
   )
 }
