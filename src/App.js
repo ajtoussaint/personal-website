@@ -15,6 +15,8 @@ import DAQ from "./components/DAQ.component"
 import NEAS from "./components/NEAS.component"
 import CHP from "./components/CHP.component"
 
+import HTMLCSS from "./components/HTMLCSS.component"
+
 
 function App() {
   return (
@@ -159,6 +161,11 @@ function App() {
           <Route
           path="/qualifications/EIT"
           element={<EIT />}
+          />
+
+          <Route
+          path="/skills/HTML"
+          element={<HTMLCSS />}
           />
 
           <Route
