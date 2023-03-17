@@ -17,6 +17,7 @@ import CHP from "./components/CHP.component"
 
 import HTMLCSS from "./components/HTMLCSS.component"
 import JS from "./components/JS.component"
+import SQL from "./components/SQL.component"
 
 
 function App() {
@@ -172,6 +173,11 @@ function App() {
           <Route
           path="/skills/JS"
           element={<JS />}
+          />
+
+          <Route
+          path="/skills/SQL"
+          element={<SQL />}
           />
 
           <Route
