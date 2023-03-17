@@ -16,6 +16,7 @@ import NEAS from "./components/NEAS.component"
 import CHP from "./components/CHP.component"
 
 import HTMLCSS from "./components/HTMLCSS.component"
+import JS from "./components/JS.component"
 
 
 function App() {
@@ -166,6 +167,11 @@ function App() {
           <Route
           path="/skills/HTML"
           element={<HTMLCSS />}
+          />
+
+          <Route
+          path="/skills/JS"
+          element={<JS />}
           />
 
           <Route
