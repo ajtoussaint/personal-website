@@ -191,3 +191,12 @@ body img {
 #RWDWrapper .techRow img {
   max-height: 200px;
 }
+
+.skillImages {
+  display: flex;
+  justify-content: center;
+}
+.skillImages img {
+  max-height: 200px;
+  margin: 0 1em;
+}

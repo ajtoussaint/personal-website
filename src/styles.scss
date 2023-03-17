@@ -207,3 +207,12 @@ body{
         }
     }
 }
+
+.skillImages{
+    display: flex;
+    justify-content: center;
+    img{
+        max-height: 200px;
+        margin: 0 1em;
+    }
+}

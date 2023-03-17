@@ -3,7 +3,10 @@ import css from '../images/CSS.png'
 import sass from '../images/Sass.png'
 
 import Markdown from "./projects/Markdown.component"
-
+import RWDCert from "./projects/RWDCert.component"
+import Bekenstein from './projects/Bekenstien.component'
+import Debt from './projects/Debt.component'
+import Clock from './projects/Clock.component'
 
 export default function HTMLCSS(props){
   return(
@@ -19,14 +22,13 @@ export default function HTMLCSS(props){
         my skills have grown through working on several other projects. I typically use the sass package to add aditional
         functionality to CSS syntax.</p>
       </div>
-      <h3>Projects</h3>
-      <div className='projectsWrapper'>
-        {//RWD cert
-        //This website
-        //Bekenstein
-        //Debt Calculator
-      }
+      <h3>Some Related Projects:</h3>
+      <div id='projectsWrapper'>
+        <Bekenstein />
+        <Debt />
+        <RWDCert />
         <Markdown />
+        <Clock />
       </div>
     </div>
   )
