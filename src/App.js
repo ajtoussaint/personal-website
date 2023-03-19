@@ -18,8 +18,9 @@ import CHP from "./components/CHP.component"
 import HTMLCSS from "./components/HTMLCSS.component"
 import JS from "./components/JS.component"
 import SQL from "./components/SQL.component"
-import CSharp from './components/CSharp.component';
-
+import CSharp from './components/CSharp.component'
+import Git from './components/Git.component';
+import React from './components/React.component'
 
 function App() {
   return (
@@ -184,6 +185,16 @@ function App() {
           <Route
           path="/skills/C"
           element={<CSharp />}
+          />
+
+          <Route
+          path="/skills/Git"
+          element={<Git />}
+          />
+
+          <Route
+          path="/skills/React"
+          element={<React />}
           />
 
           <Route
