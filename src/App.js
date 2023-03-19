@@ -18,6 +18,7 @@ import CHP from "./components/CHP.component"
 import HTMLCSS from "./components/HTMLCSS.component"
 import JS from "./components/JS.component"
 import SQL from "./components/SQL.component"
+import CSharp from './components/CSharp.component';
 
 
 function App() {
@@ -55,7 +56,7 @@ function App() {
           <Link to="/skills/HTML">HTML / CSS</Link>
           <Link to="/skills/JS">JavaScript</Link>
           <Link to="/skills/SQL">SQL</Link>
-          <Link to="/skills/C">C# / C++</Link>
+          <Link to="/skills/C">C#</Link>
           <b>Technologies</b>
           <Link to="/skills/Git">Git / Github</Link>
           <Link to="/skills/React">React</Link>
@@ -178,6 +179,11 @@ function App() {
           <Route
           path="/skills/SQL"
           element={<SQL />}
+          />
+
+          <Route
+          path="/skills/C"
+          element={<CSharp />}
           />
 
           <Route

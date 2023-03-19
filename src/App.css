@@ -200,3 +200,8 @@ body img {
   max-height: 200px;
   margin: 0 1em;
 }
+
+.skillDescription a {
+  display: inline;
+  color: rgb(235, 235, 235);
+}
