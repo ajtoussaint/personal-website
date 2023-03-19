@@ -24,6 +24,7 @@ import React from './components/React.component'
 import Node from './components/Node.component'
 import Mongo from './components/Mongo.component'
 import Pug from './components/Pug.component'
+import Chai from './components/Chai.component';
 
 function App() {
   return (
@@ -215,9 +216,14 @@ function App() {
           element={<Mongo />}
           />
 
-           <Route
+          <Route
           path="/skills/Pug"
           element={<Pug />}
+          />
+
+          <Route
+          path="/skills/Chai"
+          element={<Chai />}
           />
 
           <Route
