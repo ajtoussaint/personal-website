@@ -22,6 +22,8 @@ import CSharp from './components/CSharp.component'
 import Git from './components/Git.component'
 import React from './components/React.component'
 import Node from './components/Node.component'
+import Mongo from './components/Mongo.component'
+import Pug from './components/Pug.component'
 
 function App() {
   return (
@@ -201,6 +203,21 @@ function App() {
           <Route
           path="/skills/Node"
           element={<Node />}
+          />
+
+          <Route
+          path="/skills/PostgreSQL"
+          element={<SQL />}
+          />
+          
+          <Route
+          path="/skills/Mongo"
+          element={<Mongo />}
+          />
+
+           <Route
+          path="/skills/Pug"
+          element={<Pug />}
           />
 
           <Route
