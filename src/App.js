@@ -19,8 +19,9 @@ import HTMLCSS from "./components/HTMLCSS.component"
 import JS from "./components/JS.component"
 import SQL from "./components/SQL.component"
 import CSharp from './components/CSharp.component'
-import Git from './components/Git.component';
+import Git from './components/Git.component'
 import React from './components/React.component'
+import Node from './components/Node.component'
 
 function App() {
   return (
@@ -195,6 +196,11 @@ function App() {
           <Route
           path="/skills/React"
           element={<React />}
+          />
+
+          <Route
+          path="/skills/Node"
+          element={<Node />}
           />
 
           <Route
