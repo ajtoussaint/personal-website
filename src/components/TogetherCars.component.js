@@ -13,7 +13,9 @@ export default function TogetherCars(props){
             </a>
             <div className='projectDescription'>
                 <h3>Project Overview</h3>
-                <p>A cool web app</p>
+                <p><a href="http://ec2-18-116-234-49.us-east-2.compute.amazonaws.com/createTrip">Together Cars</a> is a web app developed using a React frontend and a Node.js/Express
+                backend with mongoDB Atlas as the database. The purpose of the app is to aid in coordinating ride sharing between friends. Users can log in to their profile, create trips, invite other users, mange who will
+                be driving and who will be a passenger in which car and share trips by link. The app is currently live on an AWS EC2 server so go check it out and start using cars together! </p>
             </div>
             <h3>The Stack:</h3>
             <div className="techRow">

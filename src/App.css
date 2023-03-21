@@ -206,6 +206,11 @@ body img {
   color: rgb(235, 235, 235);
 }
 
+.projectDescription a {
+  display: inline;
+  color: rgb(235, 235, 235);
+}
+
 .projectImg {
   border: solid black 5px;
 }

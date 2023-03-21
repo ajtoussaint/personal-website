@@ -224,6 +224,13 @@ body{
     }
 }
 
+.projectDescription{
+    a{
+        display: inline;
+        color: $off_white;
+    }
+}
+
 .projectImg{
     border: solid black 5px;
 }
