@@ -1,0 +1,28 @@
+import TCimg from "../images/TogetherCars.PNG"
+import node from '../images/NodeJS.png'
+import express from '../images/Express.png'
+import mdb from '../images/MongoDB.png'
+import react_logo from '../images/React_logo.png'
+import EC2 from '../images/EC2.png'
+
+export default function TogetherCars(props){
+    return(
+        <div className="pageWrapper">
+            <a href="http://ec2-18-116-234-49.us-east-2.compute.amazonaws.com/createTrip">
+                <img src={TCimg} alt="Together Cars" className="projectImg"></img>
+            </a>
+            <div className='projectDescription'>
+                <h3>Project Overview</h3>
+                <p>A cool web app</p>
+            </div>
+            <h3>The Stack:</h3>
+            <div className="techRow">
+                <img src={node} alt="nodeJS"></img>
+                <img src={express} alt="express"></img>
+                <img src={mdb} alt="MongoDB"></img>
+                <img src={react_logo} alt="React"></img>
+                <img src={EC2} alt="AWS EC2"></img>
+            </div>
+        </div>
+    )
+}

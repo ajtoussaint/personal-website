@@ -24,7 +24,13 @@ import React from './components/React.component'
 import Node from './components/Node.component'
 import Mongo from './components/Mongo.component'
 import Pug from './components/Pug.component'
-import Chai from './components/Chai.component';
+import Chai from './components/Chai.component'
+
+import TogetherCars from './components/TogetherCars.component'
+import Bekenstein from './components/Bekenstein.component'
+import Arithmagic from './components/Arithmagic.component'
+import Debt from './components/Debt.component'
+import Eagle from './components/Eagle.component'
 
 function App() {
   return (
@@ -239,6 +245,31 @@ function App() {
           <Route
           path="/workExperience/CHP"
           element={<CHP />}
+          />
+
+          <Route
+          path="/projects/TogetherCars"
+          element={<TogetherCars />}
+          />
+
+          <Route
+          path="/projects/Bekenstein"
+          element={<Bekenstein />}
+          />
+
+          <Route
+          path="/projects/Arithmagic"
+          element={<Arithmagic />}
+          />
+
+          <Route
+          path="/projects/Debt"
+          element={<Debt />}
+          />
+
+          <Route
+          path="/Eagle"
+          element={<Eagle />}
           />
 
         </Routes>
