@@ -214,3 +214,12 @@ body img {
 .projectImg {
   border: solid black 5px;
 }
+
+#arithmagicLink {
+  display: flex;
+  flex-wrap: wrap;
+}
+#arithmagicLink img {
+  max-height: 600px;
+  margin: 1em;
+}
