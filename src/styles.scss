@@ -243,3 +243,13 @@ body{
         margin: 1em;
     }
 }
+
+#eaglePhotos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    img{
+        margin: 1em;
+        max-width: 33%;
+    }
+}
