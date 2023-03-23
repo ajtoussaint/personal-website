@@ -23,6 +23,7 @@ export default function DAQ(props){
         relevant calculations for each test and were easily adaptable to various testing scenarios. The use of these
         spreadsheets has reduced the time in which an individual can check calculations on a test report and complete
         their final review</li>
+        <br></br>
         <li>Created Extensive Training Documents: When I statred with The Division there were no formal technical training
         documents specific to my role. Everything I learned about the specifics of my job was taught to me directly by
         senior personnel. I made a point to record notes on everything and add to them based on my personal experience.
@@ -30,6 +31,7 @@ export default function DAQ(props){
         all agreed on the practices outlined therein. These documents were then made available to new hires and this
         reduced the time needed to train them to become independent, and provided an easily available reference for our standard opperating
         procedures. This is especially useful when senior personnel are often unavailable in the field. </li>
+        <br></br>
         <li>Updated Field Checklists: I created new checklist documents for use in the field. These documents were
         organised in the order in which events would occur during a test rather than by method, which made the physical documnet
         easier to use in the field and prevented the user from skipping back and forth between sections. The digital versions

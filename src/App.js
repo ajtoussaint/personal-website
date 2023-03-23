@@ -1,6 +1,8 @@
 import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
 
+import Home from "./components/Home.component"
+
 import OSU from "./components/OSU.component"
 
 import BED from "./components/BED.component"
@@ -85,47 +87,10 @@ function App() {
         </div>
         <div id='navProjects' className='navSec'>
           <h2>Projects</h2>
-          {/*<b>Personal Projects</b>*/}
           <Link to="/projects/TogetherCars">Together Cars</Link>
           <Link to="/projects/Bekenstein">Bekenstein Limit</Link>
           <Link to="/projects/Arithmagic">Arithmagic</Link>
           <Link to="/projects/Debt">Debt Calculator</Link>
-          {/*<b>Back End Development and APIs</b>
-          <Link to="/projects/Timestamp">Timestamp Microservice</Link>
-          <Link to="/projects/Header">Request Header Parser Microservice</Link>
-          <Link to="/projects/URL">URL Shortener Microservice</Link>
-          <Link to="/projects/Exercise">Exercise Tracker</Link>
-          <Link to="/projects/Metadata">File Metadata Microservice</Link>
-          <b>Front End Development Libraries</b>
-          <Link to="/projects/Quote">Random Quote Machine</Link>
-          <Link to="/projects/Markdown">Markdown Previewer</Link>
-          <Link to="/projects/Drum">Drum Machine</Link>
-          <Link to="/projects/Calculator">JavaScript Calculator</Link>
-          <Link to="/projects/Clock">25 + 5 Clock</Link>
-          <b>Javascript Algorithms and Data Structures</b>
-          <Link to="/projects/Palindrome">Palindrome Checker</Link>
-          <Link to="/projects/Roman">Roman Numeral Converter</Link>
-          <Link to="/projects/Casesar">Caesars Cipher</Link>
-          <Link to="/projects/Telephone">Telephone Number Validator</Link>
-          <Link to="/projects/Cash">Cash Register</Link>
-          <b>Relational Database</b>
-          <Link to="/projects/Celestial">Celestial Bodies Database</Link>
-          <Link to="/projects/WC">World Cup Database</Link>
-          <Link to="/projects/Salon">Salon Appointment Scheduler</Link>
-          <Link to="/projects/Periodic">Periodic Table Database</Link>
-          <Link to="/projects/Guess">Number Guessing Game</Link>
-          <b>Quality Assurance</b>
-          <Link to="/projects/Convert">Metric-Imperial Converter</Link>
-          <Link to="/projects/Issue">Issue Tracker</Link>
-          <Link to="/projects/Library">Personal Library</Link>
-          <Link to="/projects/Sudoku">Sudoku Solver</Link>
-          <Link to="/projects/Translate">American British Translator</Link>
-          <b>Responsive Web Design</b>
-          <Link to="/projects/Survey">Survey Form</Link>
-          <Link to="/projects/Tribute">Tribute Page</Link>
-          <Link to="/projects/Technical">Technical Documentation Page</Link>
-          <Link to="/projects/Product">Build a Product Landing Page</Link>
-          <Link to="/projects/Portfolio">Build a Personal Portfolio Webpage</Link>*/}
         </div>
         <div id="navOther" className='navSec'>
           <h2>Other</h2>
@@ -136,7 +101,7 @@ function App() {
         <Routes>
           <Route
           path="/"
-          element={<div>home</div>}
+          element={<Home />}
           />
           <Route
           path="/qualifications/OSU"

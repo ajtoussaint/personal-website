@@ -61,7 +61,7 @@ body img {
 #navigate {
   grid-area: navigate;
   min-width: 25ch;
-  width: 20vw;
+  width: 10vw;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -194,11 +194,12 @@ body img {
 
 .skillImages {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
 }
 .skillImages img {
   max-height: 200px;
-  margin: 0 1em;
+  margin: 1em;
 }
 
 .skillDescription a {
@@ -231,5 +232,52 @@ body img {
 }
 #eaglePhotos img {
   margin: 1em;
-  max-width: 33%;
+  max-width: 37em;
+}
+
+#homePage h1 {
+  text-align: left;
+}
+#homePage a {
+  display: inline;
+  color: rgb(235, 235, 235);
+}
+#homePage a:hover {
+  color: gold;
+  cursor: pointer;
+}
+#homePage #educationImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#homePage #educationImages img {
+  width: 20%;
+  margin: 0.5em;
+}
+#homePage #techImages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+#homePage #techImages a {
+  width: 10%;
+  min-width: 100px;
+  margin: 3em;
+}
+#homePage #techImages img {
+  width: 100%;
+}
+
+#homeBio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+
+#selfie {
+  max-width: 200px;
+  margin-right: 2em;
+  border: solid black 2px;
 }
