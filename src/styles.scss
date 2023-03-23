@@ -289,6 +289,22 @@ body{
             width:100%;
         }
     }
+
+    #workWrapper{
+        @extend #techImages;
+        a{
+            width:25%;
+        }
+    }
+
+    #projectsWrapper{
+        a{
+            h1{
+                text-align: center;
+            }
+           text-align: center;
+        }
+    }
 }
 #homeBio{
     

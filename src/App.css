@@ -255,18 +255,27 @@ body img {
   width: 20%;
   margin: 0.5em;
 }
-#homePage #techImages {
+#homePage #techImages, #homePage #workWrapper {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-#homePage #techImages a {
+#homePage #techImages a, #homePage #workWrapper a {
   width: 10%;
   min-width: 100px;
   margin: 3em;
 }
-#homePage #techImages img {
+#homePage #techImages img, #homePage #workWrapper img {
   width: 100%;
+}
+#homePage #workWrapper a {
+  width: 25%;
+}
+#homePage #projectsWrapper a {
+  text-align: center;
+}
+#homePage #projectsWrapper a h1 {
+  text-align: center;
 }
 
 #homeBio {
