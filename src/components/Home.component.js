@@ -35,7 +35,7 @@ export default function Home(props){
                 <img src={selfie} alt="a very handsom engineer" id="selfie"></img>
                 <div>
                     <h1>Welcome to my Website!</h1>
-                    <p>My name is Andrew Toussaint. I'm an aspiring software engineer. 
+                    <p>Hello, my name is Andrew Toussaint. I'm a software developer and environmental engineer looking to bring my skills to your company.
                         I built this website to showcase my skills and projects. 
                         Keep reading to find out more about me or if your looking for something specific check the links on the left of the page.</p>
                 </div>
