@@ -49,7 +49,7 @@ body{
     display: flex;
     flex-direction: column;
     #bannerMain{
-        background-image: linear-gradient(to bottom, $dark_teal, $mid_teal, $mid_teal, $mid_teal, $dark_teal);;
+        background-image: linear-gradient(to bottom, $dark_teal, $mid_teal, $mid_teal, $mid_teal, $dark_teal);
         height: calc(100% - 1em);
         text-align: center;
     }
@@ -111,7 +111,7 @@ body{
     grid-area: main;
     width: calc(100% - 1em);
     height: 100%;
-    margin: 1em 0 0 1em;
+    margin: 3em 0 0 1em;
 }
 
 #OSUWrapper{
@@ -318,5 +318,29 @@ body{
     max-width: 200px;
     margin-right:2em;
     border:solid black 2px;
+}
+
+.navControl{
+    background-color: $dark_teal;
+    border: none;
+    color: $shadow_teal;
+    line-height: 50%;
+    background-color: $dark_teal;
+
+}
+
+#hideNavbar{
+    align-self: flex-end;
+    font-size: 2em;
+}
+
+#showNavbar{
+    align-self: flex-start;
+    width: 6ch;
+    text-align: center;
+    border: black solid 0.1em;
+    padding-bottom: 1em;
+    position:absolute;
+    top:10vh;
 }
 

@@ -103,7 +103,7 @@ body img {
   grid-area: main;
   width: calc(100% - 1em);
   height: 100%;
-  margin: 1em 0 0 1em;
+  margin: 3em 0 0 1em;
 }
 
 #OSUWrapper {
@@ -289,4 +289,27 @@ body img {
   max-width: 200px;
   margin-right: 2em;
   border: solid black 2px;
+}
+
+.navControl {
+  background-color: rgb(55, 85, 85);
+  border: none;
+  color: rgb(30, 45, 45);
+  line-height: 50%;
+  background-color: rgb(55, 85, 85);
+}
+
+#hideNavbar {
+  align-self: flex-end;
+  font-size: 2em;
+}
+
+#showNavbar {
+  align-self: flex-start;
+  width: 6ch;
+  text-align: center;
+  border: black solid 0.1em;
+  padding-bottom: 1em;
+  position: absolute;
+  top: 10vh;
 }

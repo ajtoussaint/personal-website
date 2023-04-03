@@ -1,5 +1,6 @@
 import './App.css';
 import { Routes, Route, Link} from "react-router-dom";
+import { useState } from "react"; 
 
 import Home from "./components/Home.component"
 
@@ -35,6 +36,8 @@ import Debt from './components/Debt.component'
 import Eagle from './components/Eagle.component'
 
 function App() {
+
+  const [navVisible, setNav] = useState(false);
   return (
     <div id="appWrapper">
       <div id="banner">
@@ -48,20 +51,14 @@ function App() {
           <a href="https://www.linkedin.com/in/andrew-toussaint-9a1411183">Linkedin</a>
         </div>
       </div>
-      <div id="navigate">
-        <div id="navQualifications"className='navSec'>
-          <h2>Qualifications</h2>
-          <b>Education</b>
-          <Link to="/qualifications/OSU">B.S. Environmental Engineering from The Ohio State University</Link>
-          <b>freeCodeCamp</b>
-          <Link to="/qualifications/BED">Back End Development and APIs Certification</Link>
-          <Link to="/qualifications/FED">Front End Development Libraries Certification</Link>
-          <Link to="/qualifications/JSA">Javascript Algorithms and Data Structures Certification</Link>
-          <Link to="/qualifications/RDB">Relational Database Certification</Link>
-          <Link to="/qualifications/QA">Quality Assurance Certification</Link>
-          <Link to="/qualifications/RWD">Responsive Web Design Certification</Link>
-          <b>Certifications</b>
-          <Link to="/qualifications/EIT">Engineer in Training Certification</Link>
+      {navVisible ? (<div id="navigate">
+        <button id="hideNavbar" className='navControl' onClick={() => setNav(!navVisible)}>-</button>
+        <div id='navProjects' className='navSec'>
+          <h2>Projects</h2>
+          <Link to="/projects/TogetherCars">Together Cars</Link>
+          <Link to="/projects/Bekenstein">Bekenstein Limit</Link>
+          <Link to="/projects/Arithmagic">Arithmagic</Link>
+          <Link to="/projects/Debt">Debt Calculator</Link>
         </div>
         <div id="navSkills" className='navSec'>
           <h2>Skills</h2>
@@ -85,18 +82,25 @@ function App() {
           <Link to="/workExperience/NEAS">National Engineer and Architectual Services</Link>
           <Link to="/workExperience/CHP">Carillon Historical Park</Link>
         </div>
-        <div id='navProjects' className='navSec'>
-          <h2>Projects</h2>
-          <Link to="/projects/TogetherCars">Together Cars</Link>
-          <Link to="/projects/Bekenstein">Bekenstein Limit</Link>
-          <Link to="/projects/Arithmagic">Arithmagic</Link>
-          <Link to="/projects/Debt">Debt Calculator</Link>
+        <div id="navQualifications"className='navSec'>
+          <h2>Qualifications</h2>
+          <b>Education</b>
+          <Link to="/qualifications/OSU">B.S. Environmental Engineering from The Ohio State University</Link>
+          <b>freeCodeCamp</b>
+          <Link to="/qualifications/BED">Back End Development and APIs Certification</Link>
+          <Link to="/qualifications/FED">Front End Development Libraries Certification</Link>
+          <Link to="/qualifications/JSA">Javascript Algorithms and Data Structures Certification</Link>
+          <Link to="/qualifications/RDB">Relational Database Certification</Link>
+          <Link to="/qualifications/QA">Quality Assurance Certification</Link>
+          <Link to="/qualifications/RWD">Responsive Web Design Certification</Link>
+          <b>Certifications</b>
+          <Link to="/qualifications/EIT">Engineer in Training Certification</Link>
         </div>
         <div id="navOther" className='navSec'>
           <h2>Other</h2>
           <Link to="/Eagle">Eagle Scout</Link>
         </div>
-      </div>
+      </div>) : (<button id="showNavbar" className='navControl' onClick={() => setNav(!navVisible)}>___ ___ ___</button>)}
       <div id="main">
         <Routes>
           <Route
