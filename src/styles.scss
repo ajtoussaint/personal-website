@@ -341,7 +341,8 @@ body{
     border: black solid 0.1em;
     padding-bottom: 1em;
     position:absolute;
-    top:10vh;
+    top:max(10vh,11ch);
+    
 }
 
 .bigProject{
