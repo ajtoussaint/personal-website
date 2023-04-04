@@ -159,7 +159,7 @@ body img {
   align-self: center;
 }
 
-.project {
+.project, .bigProject {
   background-color: rgb(80, 124, 124);
   display: flex;
   flex-direction: column;
@@ -171,15 +171,15 @@ body img {
   border: black solid 0.2em;
   box-shadow: 0.4em 0.4em rgb(30, 45, 45);
 }
-.project img {
+.project img, .bigProject img {
   max-height: 80%;
   max-width: 80%;
 }
-.project h1 {
+.project h1, .bigProject h1 {
   margin-top: 0;
   font-size: 1em;
 }
-.project:hover {
+.project:hover, .bigProject:hover {
   background-color: rgb(55, 85, 85);
   color: black;
 }
@@ -312,4 +312,15 @@ body img {
   padding-bottom: 1em;
   position: absolute;
   top: 10vh;
+}
+
+.bigProject {
+  width: 35%;
+  height: auto;
+  text-decoration: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.bigProject img {
+  border: rgb(30, 45, 45) solid 0.1em;
 }

@@ -1,6 +1,6 @@
 import selfie from "../images/Selfie.jpg"
-import osu_o from "../images/O.png"
-import fcc from "../images/fcc.jpg"
+//import osu_o from "../images/O.png"
+//import fcc from "../images/fcc.jpg"
 
 import html from '../images/HTML.png'
 import css from '../images/CSS.png'
@@ -15,9 +15,12 @@ import CSharp_logo from '../images/CSharp.png'
 import unity from '../images/Unity.png'
 import EC2 from '../images/EC2.png'
 
-import Together from './projects/Together.component'
-import Bekenstein from './projects/Bekenstien.component'
-import Arithmagic from "./projects/Arithmagic.component"
+import togetherImage from '../images/TogetherCarsMain.PNG'
+import bekensteinImage from '../images/BekensteinLimitMain.PNG'
+import arithmagicImage from '../images/ArithmagicMain.PNG'
+// import Together from './projects/Together.component'
+// import Bekenstein from './projects/Bekenstien.component'
+// import Arithmagic from "./projects/Arithmagic.component"
 
 import chp from '../images/CHP.png'
 import neas from '../images/NEAS.jpg'
@@ -25,8 +28,7 @@ import daq from '../images/eec_logo.jpg'
 
 import wizard from "../images/Wizard.png"
 
-
-import { Link } from "react-router-dom"
+import {Link} from "react-router-dom";
 
 export default function Home(props){
     return(
@@ -42,7 +44,30 @@ export default function Home(props){
                 </div>
             </div>
             <br></br>
-            <h1>Education</h1>
+            <h1>Projects</h1>
+            <p>Check out some of the recent projects I've been working on:</p>
+            <div id='projectsWrapper'>
+                <Link className="bigProject" to="/projects/TogetherCars">
+                    <h1>Together Cars</h1>
+                    <img src={togetherImage} alt="Together Cars App"></img>
+                    <p className="bpText"><b>Node | React | MongoDB</b></p>
+                    <p className="bpText">Web app for preparing roadtrips with your friends</p>
+                </Link>
+                <Link className="bigProject" to="/projects/Bekenstein">
+                    <h1>Bekenstein Limit</h1>
+                    <img src={bekensteinImage} alt="Bekenstein Limit App"></img>
+                    <p className="bpText"><b>Node | Pug | MongoDB</b></p>
+                    <p className="bpText">Web app for organizing your notes on various subjects</p>
+                </Link>
+                <Link className="bigProject" to="/projects/Arithmagic">
+                    <h1>Together Cars</h1>
+                    <img src={arithmagicImage} alt="Arithmagic App"></img>
+                    <p className="bpText"><b>C# | Unity | GooglePlay</b></p>
+                    <p className="bpText">Android application to help kids learn math</p>
+                </Link>
+            </div>
+            <br></br>
+            {/*<h1>Education</h1>
             <div id="educationImages">
                 <img src={osu_o} alt="Ohio State Logo"></img>
                 <img src={fcc} alt="Free Code Camp Logo"></img>
@@ -53,7 +78,7 @@ export default function Home(props){
             a videogame as that had always been something I was interested in. This eventually turned into <Link to="/projects/Arithmagic">Arithmagic</Link> and
             I began to consider software engineering as a career path. In 2022 I began completing certifications through the freeCodeCamp program online.
             As my knowledge and skills grew so did my interest in software developement. Now I am fully committed to becoming a software engineer!</p>
-            <br></br>
+            <br></br>*/}
             <h1>Software Skills</h1>
             <p>Click on one of the images below to see the projects and certifications I have worked on regarding each language or technology:</p>
             <div id="techImages">
@@ -69,14 +94,6 @@ export default function Home(props){
                 <Link to="/skills/C"><img src={CSharp_logo} alt="C# logo"></img></Link>
                 <Link to="/projects/Arithmagic"><img src={unity} alt="Unity logo"></img></Link>
                 <Link to="/projects/TogetherCars"><img src={EC2} alt="AWS EC2"></img></Link>
-            </div>
-            <br></br>
-            <h1>Projects</h1>
-            <p>Knowing how to write code and manage systems is nice but it isn't worth much if you don't put it into practice. Here are a few of the personal projects I'm most proud of.</p>
-            <div id='projectsWrapper'>
-                <Together />
-                <Bekenstein />
-                <Arithmagic />
             </div>
             <br></br>
             <h1>Work Experience</h1>
