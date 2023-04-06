@@ -37,10 +37,11 @@ export default function Home(props){
                 <img src={selfie} alt="a very handsom engineer" id="selfie"></img>
                 <div>
                     <h1>Welcome to my Website!</h1>
-                    <p>Hello, my name is Andrew Toussaint. Software developer / Environmental Engineer.
-                     Focused, organized, self-starter writing sustainable code to improve work flows.
-                    Experience developing and deploying frontend and backend web apps, maintaining documentation, working as part of a multidisciplinary team.
-                    Looking to work full time as a software engineer.</p>
+                    <p>Hello, my name is Andrew Toussaint. I make web applications designed to enhance productivity, organization, and communication.
+                    My main languages/tools are JavaScript, React.js, Node.js, and MongoDB.
+                    As a full stack developer, I have experience designing and deploying the frontend and the backend for web apps.
+                    I'm interested in joining an engineering team where I can put my skills to work and make an impact while growing as a software engineer.
+                    </p>
                 </div>
             </div>
             <br></br>
